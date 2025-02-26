@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duncan Drywall and Painting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .logo-placeholder {
+            width: 400px;
+            height: auto;
+            background: #34495e;
+            margin: 0 auto 20px;
+            line-height: 100px;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background: #3498db;
+            color: white;
+            border-radius: 8px;
+            margin-top: 40px;
+            transition: background 0.3s ease;
+        }
+
+        .contact:hover {
+            background: #2980b9;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        .panoramic-image {
+            text-align: center;
+        }
+
+        .panoramic-image img {
+            height: auto;
+            width: 80%;
+            max-width: 2000px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logo-sm.jpg" class="logo-placeholder" />
+        <h1>Duncan Drywall and Painting</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="fade-in">Our Services</h2>
+        <div class="services">
+            <div class="service-card fade-in">
+                <h3>Drywall Installation</h3>
+                <p>Professional drywall installation for residential and commercial properties.</p>
+            </div>
+            <div class="service-card fade-in">
+                <h3>Drywall Repair</h3>
+                <p>Expert repairs for holes, cracks, and water damage.</p>
+            </div>
+            <div class="service-card fade-in">
+                <h3>Interior Painting</h3>
+                <p>High-quality painting services with premium materials.</p>
+            </div>
+        </div>
+    </div>
+    <div class="panoramic-image">
+        <img src="panoramic-min.jpg" />
+    </div>
+    <div class="container">
+        <div class="contact fade-in">
+            <h2>Contact Us</h2>
+            <p>Need a quote or have questions?</p>
+            <a href="tel:715-829-3812">715-829-3812</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Duncan Drywall and Painting. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
